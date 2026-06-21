@@ -113,27 +113,35 @@ The analysis revealed that **area (total square footage)** is the most influenti
 
 Other important contributors include:
 
-* Preferred Area (`prefarea`)
-* Number of Bedrooms
-* Number of Stories
-* Number of Bathrooms
+- Preferred Area (`prefarea`)
+- Number of Bedrooms
+- Number of Stories
+- Number of Bathrooms
 
 Amenities such as air conditioning, main road access, and basement availability also contribute positively to property value.
 
+### Model Performance
+
+The **Linear Regression model** achieved an **R² Score of 0.9204**, indicating that it explains approximately **92% of the variation in housing prices**, demonstrating strong predictive capability for the given dataset.
+
 ### Interesting Observations
 
-* Preferred location (`prefarea`) had a stronger impact on house prices than several physical property attributes.
-* Hot water heating showed lower predictive importance than expected.
-* Location and property size remain the dominant drivers of house valuation.
+- Preferred location (`prefarea`) had a stronger impact on pricing than several physical property attributes.
+- Hot water heating showed lower predictive importance than expected.
+- Location and property size remain the dominant drivers of house valuation.
 
 ### Business Recommendations
 
 Based on the analysis:
 
-* Prioritize properties located in preferred areas.
-* Emphasize floor area in marketing and pricing strategies.
-* Highlight value-adding amenities such as air conditioning and main road access.
-* Use predictive analytics to support pricing decisions and investment planning.
+- Prioritize properties located in preferred areas.
+- Emphasize floor area in marketing and pricing strategies.
+- Highlight value-adding amenities such as air conditioning and main road access.
+- Use predictive analytics to support pricing decisions and investment planning.
+
+### 📝 Insights & Summary
+
+The analysis showed that **area** is the most influential factor affecting house prices, followed by preferred location (`prefarea`), number of bedrooms, stories, and bathrooms. The **Linear Regression model** achieved an R² score of **0.9204**, meaning it was able to explain about **92% of the variation in house prices**, indicating strong predictive performance. One surprising finding was that **preferred location had a greater impact on pricing than several physical property features**, highlighting the importance of location in real estate. Additionally, hot water heating contributed less to price prediction than expected. Based on these findings, a real estate business should focus on promoting properties in desirable locations and emphasize larger floor areas, as these factors have the strongest influence on property value.
 
 ---
 
