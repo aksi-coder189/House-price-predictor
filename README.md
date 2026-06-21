@@ -66,7 +66,7 @@ The dataset contains residential housing information, including:
 
 ### Linear Regression
 
-A baseline regression model used for understanding linear relationships between housing features and price.
+A baseline regression model used for understanding linear relationships between housing features and house prices.
 
 ### Random Forest Regressor
 
@@ -94,11 +94,24 @@ The models were evaluated using:
 
 ---
 
+## 📊 Results
+
+| Model                   | R² Score | Performance           |
+| ----------------------- | -------- | --------------------- |
+| Linear Regression       | 0.9204   | Best Performing Model |
+| Random Forest Regressor | 0.8746   | Good Performance      |
+
+The Linear Regression model achieved the highest accuracy and explained approximately **92% of the variation in housing prices**, making it the best-performing model for this dataset.
+
+---
+
 ## 📌 Key Findings & Insights
 
 ### Feature Impact Analysis
 
-The analysis revealed that **area (total square footage)** is the most influential factor affecting house prices, contributing approximately **84.8%** of the model's explained variance. Other important contributors include:
+The analysis revealed that **area (total square footage)** is the most influential factor affecting house prices, contributing approximately **84.8%** of the model's explained variance.
+
+Other important contributors include:
 
 * Preferred Area (`prefarea`)
 * Number of Bedrooms
@@ -107,17 +120,11 @@ The analysis revealed that **area (total square footage)** is the most influenti
 
 Amenities such as air conditioning, main road access, and basement availability also contribute positively to property value.
 
-### Model Performance
-
-The **Linear Regression** model achieved an **R² Score of 0.9204**, indicating that it explains approximately **92% of the variation** in housing prices.
-
-The model achieved an average prediction error of approximately **₹0.21 million**, demonstrating strong predictive capability for the given dataset.
-
 ### Interesting Observations
 
-One notable finding was that **preferred location (`prefarea`)** had a stronger impact on pricing than several physical property attributes, reinforcing the importance of location in real estate valuation.
-
-Additionally, **hot water heating** showed lower predictive importance than expected compared to other amenities.
+* Preferred location (`prefarea`) had a stronger impact on house prices than several physical property attributes.
+* Hot water heating showed lower predictive importance than expected.
+* Location and property size remain the dominant drivers of house valuation.
 
 ### Business Recommendations
 
@@ -127,6 +134,7 @@ Based on the analysis:
 * Emphasize floor area in marketing and pricing strategies.
 * Highlight value-adding amenities such as air conditioning and main road access.
 * Use predictive analytics to support pricing decisions and investment planning.
+
 ---
 
 ## 🏡 Sample Prediction
@@ -138,16 +146,33 @@ The project includes a custom house price prediction example where users can mod
 ## 🚀 Future Improvements
 
 * Deploy the model using Streamlit or Flask.
-* Integrate real-time real-estate data.
-* Experiment with advanced ensemble models.
 * Build an interactive web-based prediction system.
+* Integrate real-time real-estate market data.
+* Experiment with advanced ensemble learning models.
+* Deploy the model as a cloud-based application.
+
+---
+
+## 📂 Project Structure
+
+```text
+House-Price-Prediction/
+│
+├── analysis.ipynb
+├── housepredict.py
+├── Housing.csv
+├── req.txt
+└── README.md
+```
 
 ---
 
 ## 👩‍💻 Author
 
 **Aakriti Singh**
-
-B.Tech Computer Science (AI)
-
+B.Tech Computer Science (Artificial Intelligence)
 Machine Learning & Data Analytics Enthusiast
+
+---
+
+⭐ If you found this project useful, consider giving it a star on GitHub.
